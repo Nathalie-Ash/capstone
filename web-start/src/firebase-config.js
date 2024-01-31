@@ -18,3 +18,20 @@ export function getFirebaseConfig() {
     return config;
   }
 }
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDIhdQ3Kka9njFkQItTarm7FE_KuktLvFY",
+  authDomain: "ekhirmara.firebaseapp.com",
+  projectId: "ekhirmara",
+  storageBucket: "ekhirmara.appspot.com",
+  messagingSenderId: "62742063877",
+  appId: "1:62742063877:web:0fb2313f28fa97e8a5656c"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);

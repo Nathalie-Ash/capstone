@@ -36,7 +36,7 @@ import { HeaderComponent } from './components/header/header.component';
     ChatPageComponent,
     HeaderComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, CommonModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, CommonModule, FormsModule, provideFirebaseApp(() => initializeApp({"projectId":"ekhirmara","appId":"1:62742063877:web:0fb2313f28fa97e8a5656c","storageBucket":"ekhirmara.appspot.com","apiKey":"AIzaSyDIhdQ3Kka9njFkQItTarm7FE_KuktLvFY","authDomain":"ekhirmara.firebaseapp.com","messagingSenderId":"62742063877"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideFunctions(() => getFunctions()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())],
   providers: [],
   bootstrap: [AppComponent],
 })

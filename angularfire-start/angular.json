@@ -98,9 +98,19 @@
         "deploy": {
           "builder": "@angular/fire:deploy",
           "options": {
-            "version": 2,
-            "browserTarget": "friendlychat:build:production"
-          }
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "friendlychat:build:production",
+              "serveTarget": "friendlychat:serve:production"
+            },
+            "development": {
+              "buildTarget": "friendlychat:build:development",
+              "serveTarget": "friendlychat:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
