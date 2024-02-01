@@ -5,6 +5,7 @@
   },
   "hosting": [
     {
+      "site":"friendlychat",
       "source": ".",
       "ignore": [
         "firebase.json",
@@ -16,7 +17,7 @@
       }
     },
     {
-      "target": "friendlychat",
+      "site":"default",
       "source": ".",
       "frameworksBackend": {}
     }
